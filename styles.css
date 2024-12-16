@@ -1,0 +1,431 @@
+/* Header Styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+header {
+    background-image: url('gymimages/img942.jpg'); /* Correct way to set the background image */
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: center;
+}
+
+header img#logo {
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+/* Subtle Side Gradients on Header */
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.05), transparent);
+}
+
+header::before {
+    left: 0;
+}
+
+header::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.05), transparent);
+}
+
+/* Extend Gradient Down to Footer */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.05), transparent);
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.05), transparent);
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.3); /* Adjusted background opacity */
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: #AEB1B6;
+    text-shadow: rgba(211, 211, 211, 0.8) 5px 5px 25px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.6), 5px 0 10px rgba(0, 0, 0, 0.6); /* Corrected shadow */
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 50px; 
+    border: none;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: 3px solid #555758;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem; 
+}
+
+.nav-btn:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #6f9adb;
+}
+
+.nav-btn:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.image-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 25px;
+    margin: 25px; 
+}
+.image-item {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    max-width: 10px; 
+}
+.image-item img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.image-item p {
+    font-size: 25px; 
+    color: rgb(186, 199, 232); 
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #555758;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px rgba(150, 150, 150, 0.8);
+}
+
+
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #555758;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(150, 150, 150, 0.8);
+    padding: 0.2
+}
+
+/* List Styling */
+ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Call-to-Action Button */
+.cta {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cta a {
+    text-decoration: none;
+    background-color: #AEB1B6;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #AEB1B6;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+    background-image: url('gymimages/img248.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.image-item {
+    width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    background-color: #6f6f6f;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+button, .btn-2 {
+    width: 150px; /* Adjust button width */
+    height: 50px; /* Adjust button height */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem; /* Adjust font size */
+    outline: none;
+    border: 3px solid #42fbf2;
+    position: relative;
+    z-index: 1;
+    
+    /* Updated font styles */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace <weight> with desired font weight (e.g., 400 for normal) */
+    font-style: normal; /* Keep normal or adjust as needed */
+}
+
+button:hover, .btn-2:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+button:before, .btn-2:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42fbf2;
+}
+
+button:hover:before, .btn-2:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+/* Centered List Styling */
+.centered-list {
+    padding: 0;
+    list-style-type: disc;
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin */
+}
+
+.centered-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem; /* Add padding to align text with bullet points */
+    text-align: left; /* Align text to the left */
+    display: list-item; /* Ensure list item display */
+    list-style-position: inside; /* Ensure bullets are inside the padding */
+    line-height: 1.2;
+}
+/* Form Box Styling */
+.form-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto; /* Center the box */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 600px; /* Increase the maximum width */
+}
+
+/* Form Label and Input Styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Survey Container Styling */
+.survey-container {
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px; 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-box {
+    flex: 1; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+.hours-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Doppio One", sans-serif;
+    color: rgb(99, 100, 103);
+}
+.hours-section h1 {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(174, 174, 174, 0.8);
+    color: rgb(57, 57, 59);
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hours-table th,
+.hours-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(128, 130, 133, 0.5);
+}
+.hours-table th {
+    background-color: rgba(206, 207, 216, 0.9);
+    font-size: 18px;
+}
+.hours-table td {
+    font-size: 16px;
+}
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
